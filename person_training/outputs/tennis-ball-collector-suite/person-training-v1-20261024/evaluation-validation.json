@@ -1,0 +1,492 @@
+{
+  "weights_sha256": "df315a4e110a8f72e1fc0fe0ce6cef46ba24c99b40ae091ebd28192f7d4c5536",
+  "set": "validation",
+  "images": 24,
+  "threshold": 0.75,
+  "tile_size": 1024,
+  "criteria": "zero false positives and zero missed persons; unchanged 1m localization match",
+  "runtime_source_sha256": "42b44b81adf35ace7ae3c3e091a6e739fbcca9778c1fefed089c71399a020459",
+  "scope": "offline synthetic RGB; known negative regression images were included in training; external development and validation images were not",
+  "true_positives": 8,
+  "false_negatives": 0,
+  "false_positives": 0,
+  "positive_states": 4,
+  "positive_states_seen_in_any_camera": 4,
+  "wall_median_seconds": 0.14450760650004213,
+  "wall_max_seconds": 0.2036091510000233,
+  "rows": [
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_0_A.png",
+      "state_id": "negative_2_0_0",
+      "camera_id": "A",
+      "sha256": "dca927567bf1cbfef00e09a2b569b2e12f98fa436a76037599cf13e93c57af85",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.16526311999996324,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_0_B.png",
+      "state_id": "negative_2_0_0",
+      "camera_id": "B",
+      "sha256": "e8c7c5b24f50d5b00281369dc214769d8bf3c1f26d009d79fd123412d897d185",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.13809449899997617,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_1_A.png",
+      "state_id": "negative_2_0_1",
+      "camera_id": "A",
+      "sha256": "9d7941b4abd5538af6f5bd562976ff507dc41429065fd23f12b8cc55e0ad3b0c",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.1417649589999428,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_1_B.png",
+      "state_id": "negative_2_0_1",
+      "camera_id": "B",
+      "sha256": "b253428e496718c44457e12dd25739a5098ffad28d4c111622cae093294f4707",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.14188616500007356,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_2_A.png",
+      "state_id": "negative_2_0_2",
+      "camera_id": "A",
+      "sha256": "3e9f9ae56fc2904929fb0caf0c607e2603001ac5ded3083546440820a695fb36",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.1377674069999557,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_2_B.png",
+      "state_id": "negative_2_0_2",
+      "camera_id": "B",
+      "sha256": "c14678756c4c2c96a4b64bf39ad7a549e5ba711c941e8f5d0934198dd16fbf56",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.14295638299995517,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_3_A.png",
+      "state_id": "negative_2_0_3",
+      "camera_id": "A",
+      "sha256": "60964f45f3cded15b675ce74750be60c1c4955bd103a1dcdc033326dc132757b",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.1444443500000716,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_0_3_B.png",
+      "state_id": "negative_2_0_3",
+      "camera_id": "B",
+      "sha256": "7b5168eb6e4b89f7d10796aeaaef40fcca057233205c1ff0f15d8f5961ab1092",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.1473040429999628,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_0_A.png",
+      "state_id": "negative_2_35_0",
+      "camera_id": "A",
+      "sha256": "f3bc6bd76aad91ce3c692af8d23ca844d633da3dcd8c1519c041843abd1e6b1e",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.1460951029999933,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_0_B.png",
+      "state_id": "negative_2_35_0",
+      "camera_id": "B",
+      "sha256": "5b384e0ffe3f3905e1c46fa4d9afca986dfdb31b785e8de090adf7d6e22b85ac",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.14264017699997567,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_1_A.png",
+      "state_id": "negative_2_35_1",
+      "camera_id": "A",
+      "sha256": "40649ba9fdc581d4fc7957e5339b2222a55b12cf2783544b8a77ff564c1edfae",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.14571807300001183,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_1_B.png",
+      "state_id": "negative_2_35_1",
+      "camera_id": "B",
+      "sha256": "4913741cc32695b192a95e26a246f0eb21c943edd7135a8a547a97a09e5310c9",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.14707212700000127,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_2_A.png",
+      "state_id": "negative_2_35_2",
+      "camera_id": "A",
+      "sha256": "495c2522adbde85481e18c8f1d359469204dd40cf04057316f34dd1a6bb410e6",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.13891001199999664,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_2_B.png",
+      "state_id": "negative_2_35_2",
+      "camera_id": "B",
+      "sha256": "102cb58cc9d092372e9d6cedb6c0188c84c45f742b83685524eb637dc6cb3458",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.13850762100003067,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_3_A.png",
+      "state_id": "negative_2_35_3",
+      "camera_id": "A",
+      "sha256": "eb884e502b11349ab5ee30812e8f9be661fb59916b96c0dffd3e1717069ea18b",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.14351186700002927,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/negative_2_35_3_B.png",
+      "state_id": "negative_2_35_3",
+      "camera_id": "B",
+      "sha256": "69c8060628cfc8c986e6fc1930b3bd787b4db456cc4fc96d49abedaf1ab911c7",
+      "expected": 0,
+      "matched": 0,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [],
+      "elapsed_seconds": 0.14457086300001265,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_8_A.png",
+      "state_id": "person_8",
+      "camera_id": "A",
+      "sha256": "65cb829b97dabe236e7575bd2e42959688b72d7122c8ac208f0c889a48093465",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            2128.5376892089844,
+            1228.030990600586,
+            2274.7294921875,
+            1373.6700897216797
+          ],
+          "confidence": 0.8858229517936707,
+          "foot_pixel": [
+            2201.633590698242,
+            1373.6700897216797
+          ],
+          "position_m": [
+            -12.121309527981897,
+            -2.6775867248223393,
+            0.0
+          ],
+          "camera_id": "A"
+        }
+      ],
+      "elapsed_seconds": 0.2036091510000233,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_8_B.png",
+      "state_id": "person_8",
+      "camera_id": "B",
+      "sha256": "4ef237491e6d2cac6e5322e8bc7beb0ad9f75181ba53e12e04023b65627958ed",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            1785.5063018798828,
+            439.53839111328125,
+            1832.8111877441406,
+            522.1807861328125
+          ],
+          "confidence": 0.8658591508865356,
+          "foot_pixel": [
+            1809.1587448120117,
+            522.1807861328125
+          ],
+          "position_m": [
+            -11.779398574934618,
+            -2.633984595158034,
+            0.0
+          ],
+          "camera_id": "B"
+        }
+      ],
+      "elapsed_seconds": 0.14290619600001264,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_9_A.png",
+      "state_id": "person_9",
+      "camera_id": "A",
+      "sha256": "3be2d89d7b1a84afde5d4a657935100d29bd9bedd65314efc55d584753343176",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            1785.3733520507812,
+            439.1886291503906,
+            1832.5203247070312,
+            522.3825073242188
+          ],
+          "confidence": 0.8774076104164124,
+          "foot_pixel": [
+            1808.9468383789062,
+            522.3825073242188
+          ],
+          "position_m": [
+            11.76525101484285,
+            2.6380831053419627,
+            0.0
+          ],
+          "camera_id": "A"
+        }
+      ],
+      "elapsed_seconds": 0.1430275419999134,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_9_B.png",
+      "state_id": "person_9",
+      "camera_id": "B",
+      "sha256": "06c30ef021277b28c86aa746992157f0549981a7bf42f91e49eec5df3ab70c69",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            2129.524627685547,
+            1229.945556640625,
+            2274.1492309570312,
+            1372.9551849365234
+          ],
+          "confidence": 0.8858237862586975,
+          "foot_pixel": [
+            2201.836929321289,
+            1372.9551849365234
+          ],
+          "position_m": [
+            12.113277117802477,
+            2.6808702580952444,
+            0.0
+          ],
+          "camera_id": "B"
+        }
+      ],
+      "elapsed_seconds": 0.14900058299997454,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_10_A.png",
+      "state_id": "person_10",
+      "camera_id": "A",
+      "sha256": "5194f45f78aa3e3ce972480b3cd9da0e06dfa76e8bf5e002cfef1e9f592ca3a6",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            1655.1701049804688,
+            779.9513549804688,
+            1742.7509765625,
+            897.8119506835938
+          ],
+          "confidence": 0.9264141917228699,
+          "foot_pixel": [
+            1698.9605407714844,
+            897.8119506835938
+          ],
+          "position_m": [
+            -4.0821730668432465,
+            3.161418079174253,
+            0.0
+          ],
+          "camera_id": "A"
+        }
+      ],
+      "elapsed_seconds": 0.14900717099999383,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_10_B.png",
+      "state_id": "person_10",
+      "camera_id": "B",
+      "sha256": "d870f0e49fdf1d0fdfad364e8e6eeedaeb481200658fc0b677a58ec55c7be74b",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            2056.4823303222656,
+            565.6083374023438,
+            2115.8665161132812,
+            663.9227905273438
+          ],
+          "confidence": 0.8862242698669434,
+          "foot_pixel": [
+            2086.1744232177734,
+            663.9227905273438
+          ],
+          "position_m": [
+            -3.8213291162007046,
+            3.1601002353791765,
+            0.0
+          ],
+          "camera_id": "B"
+        }
+      ],
+      "elapsed_seconds": 0.15780982200010385,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_11_A.png",
+      "state_id": "person_11",
+      "camera_id": "A",
+      "sha256": "b7c8a3c94e82b5e9d6cc6996b02d5d6bdeba71ef137a91c66ac5c2fb6f204c63",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            2056.4468688964844,
+            565.7086791992188,
+            2115.49560546875,
+            664.1835327148438
+          ],
+          "confidence": 0.8819988369941711,
+          "foot_pixel": [
+            2085.971237182617,
+            664.1835327148438
+          ],
+          "position_m": [
+            3.8096183370973087,
+            -3.1550769489801307,
+            0.0
+          ],
+          "camera_id": "A"
+        }
+      ],
+      "elapsed_seconds": 0.15245955499995034,
+      "person_tile_count": 15
+    },
+    {
+      "image": "outputs/tennis-ball-collector-suite/v47-person-render-set-20261024/person_11_B.png",
+      "state_id": "person_11",
+      "camera_id": "B",
+      "sha256": "d09d76e32dc3eddf50611e7c9f7ceb9fa8ebb497b34dfd22013c7f64cb0a27a2",
+      "expected": 1,
+      "matched": 1,
+      "false_positive": 0,
+      "missed": 0,
+      "people": [
+        {
+          "bbox_xyxy": [
+            1654.7042846679688,
+            779.5023803710938,
+            1742.9619140625,
+            897.609375
+          ],
+          "confidence": 0.9126036167144775,
+          "foot_pixel": [
+            1698.8330993652344,
+            897.609375
+          ],
+          "position_m": [
+            4.077023561667417,
+            -3.1639201388668545,
+            0.0
+          ],
+          "camera_id": "B"
+        }
+      ],
+      "elapsed_seconds": 0.14482606799992936,
+      "person_tile_count": 15
+    }
+  ],
+  "all_supplied_images_pass": true
+}

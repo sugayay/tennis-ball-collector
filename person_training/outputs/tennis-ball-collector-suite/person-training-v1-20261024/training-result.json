@@ -1,0 +1,15 @@
+{
+  "status": "training_completed_not_accepted",
+  "best_weights": "./outputs/tennis-ball-collector-suite/person-training-v1-20261024/runs/n-person-v1/weights/best.pt",
+  "best_sha256": "df315a4e110a8f72e1fc0fe0ce6cef46ba24c99b40ae091ebd28192f7d4c5536",
+  "wall_seconds": 838.397743442,
+  "original_ball_weights_unchanged": true,
+  "metrics": {
+    "metrics/precision(B)": 0.9967509024567693,
+    "metrics/recall(B)": 1.0,
+    "metrics/mAP50(B)": 0.995,
+    "metrics/mAP50-95(B)": 0.9806666666666667,
+    "fitness": 0.9806666666666667
+  },
+  "completed_at_utc": "2026-10-24T07:01:43.954794+00:00"
+}

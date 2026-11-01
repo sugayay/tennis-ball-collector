@@ -1,0 +1,566 @@
+{
+  "scope": "synthetic static-pose fixture; not physical missions or real human validation",
+  "selection_rule": "zero false positives and zero misses on development; then evaluate selected candidate once on validation",
+  "initial_candidates": [
+    "n1024",
+    "s1024",
+    "s1536"
+  ],
+  "threshold": 0.75,
+  "states": [
+    {
+      "id": "negative_0_0_0",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        0.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_0_0_1",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        0.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_0_0_2",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        0.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_0_0_3",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        0.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_0_35_0",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        35.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_0_35_1",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        35.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_0_35_2",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        35.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_0_35_3",
+      "split": "development",
+      "robot": [
+        -13.8,
+        -6.8,
+        35.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_0_0",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        0.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_0_1",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        0.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_0_2",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        0.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_0_3",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        0.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_35_0",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        35.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_35_1",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        35.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_35_2",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        35.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_1_35_3",
+      "split": "development",
+      "robot": [
+        -12.3,
+        -6.3,
+        35.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_0_0",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        0.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_0_1",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        0.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_0_2",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        0.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_0_3",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        0.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_35_0",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        35.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_35_1",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        35.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_35_2",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        35.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": null
+    },
+    {
+      "id": "negative_2_35_3",
+      "split": "validation",
+      "robot": [
+        -11.0,
+        -6.9,
+        35.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": null
+    },
+    {
+      "id": "person_0",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": [
+        -10.4,
+        -3.5,
+        30
+      ]
+    },
+    {
+      "id": "person_1",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": [
+        10.4,
+        3.5,
+        210
+      ]
+    },
+    {
+      "id": "person_2",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": [
+        -14.0,
+        -4.0,
+        90
+      ]
+    },
+    {
+      "id": "person_3",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": [
+        14.0,
+        4.0,
+        270
+      ]
+    },
+    {
+      "id": "person_4",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": [
+        -6.0,
+        -2.0,
+        0
+      ]
+    },
+    {
+      "id": "person_5",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": [
+        6.0,
+        2.0,
+        180
+      ]
+    },
+    {
+      "id": "person_6",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": [
+        -1.0,
+        0.0,
+        45
+      ]
+    },
+    {
+      "id": "person_7",
+      "split": "development",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": [
+        1.0,
+        3.0,
+        225
+      ]
+    },
+    {
+      "id": "person_8",
+      "split": "validation",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        -0.448,
+        0.0
+      ],
+      "person": [
+        -12.0,
+        -2.5,
+        60
+      ]
+    },
+    {
+      "id": "person_9",
+      "split": "validation",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        -0.2,
+        0.2617993877991494
+      ],
+      "person": [
+        12.0,
+        2.5,
+        240
+      ]
+    },
+    {
+      "id": "person_10",
+      "split": "validation",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        2.181661564992912,
+        0.2617993877991494
+      ],
+      "person": [
+        -4.0,
+        3.0,
+        120
+      ]
+    },
+    {
+      "id": "person_11",
+      "split": "validation",
+      "robot": [
+        -13.4,
+        -6.6,
+        18.0
+      ],
+      "pose": [
+        2.181661564992912,
+        -0.8726646259971648
+      ],
+      "person": [
+        4.0,
+        -3.0,
+        300
+      ]
+    }
+  ],
+  "items": [],
+  "script_sha256": "ed7f9f5b4aca528563c3a32e04957e2d215d18b9be8793e702683d1948408e49"
+}

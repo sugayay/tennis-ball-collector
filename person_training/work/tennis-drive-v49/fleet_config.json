@@ -1,0 +1,8 @@
+{
+  "robots": [
+    {"id": "A", "position_m": [-13.6, -6.5, 0.205], "yaw_degrees": 0.0},
+    {"id": "B", "position_m": [13.6, 6.5, 0.205], "yaw_degrees": 180.0}
+  ],
+  "operating_area_status": "pending_user_decision",
+  "robot_assignment_status": "initial_side_only_no_driving_or_dispatch"
+}

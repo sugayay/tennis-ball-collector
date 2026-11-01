@@ -1,0 +1,5 @@
+path: ./outputs/tennis-ball-collector-suite/person-training-v1-20261024/tiles
+train: images/train
+val: images/tune
+names:
+  0: person

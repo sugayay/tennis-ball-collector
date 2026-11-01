@@ -1,0 +1,29 @@
+{
+  "repository": "KhronosGroup/glTF-Sample-Assets",
+  "commit": "4995a638c96dbc94376d3d6164e70fee3ac7f7a2",
+  "asset": "Cesium Man",
+  "license": "CC-BY-4.0 AND LicenseRef-LegalMark-Cesium",
+  "copyright": "2015, 2017 Cesium",
+  "files": {
+    "CesiumMan.glb": {
+      "source_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/4995a638c96dbc94376d3d6164e70fee3ac7f7a2/Models/CesiumMan/glTF-Binary/CesiumMan.glb",
+      "bytes": 438044,
+      "sha256": "b7001eaeea8254bd44773bcd247e78696d94169388fbb2a1800fc69434e777d9"
+    },
+    "README-source.md": {
+      "source_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/4995a638c96dbc94376d3d6164e70fee3ac7f7a2/Models/CesiumMan/README.md",
+      "bytes": 1146,
+      "sha256": "1bf7fa794013d2e0de8c244518936b04d95cba780f4510c8cceee4c23dbc04a8"
+    },
+    "CC-BY-4.0.txt": {
+      "source_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/4995a638c96dbc94376d3d6164e70fee3ac7f7a2/LICENSES/CC-BY-4.0.txt",
+      "bytes": 13034,
+      "sha256": "c8041334a99cb48852b2139253cbde5f8ac87e27f124aed51223e0d5bf0080eb"
+    },
+    "LicenseRef-LegalMark-Cesium.txt": {
+      "source_url": "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Assets/4995a638c96dbc94376d3d6164e70fee3ac7f7a2/LICENSES/LicenseRef-LegalMark-Cesium.txt",
+      "bytes": 625,
+      "sha256": "7bafc8dbff0b9d04297bced53a47809e3ab6721cb35b4a2d780533476b28ebd4"
+    }
+  }
+}

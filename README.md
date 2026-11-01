@@ -16,7 +16,7 @@
 固定7配置は無人の仮区域です。
 自分の位置と姿勢はシミュレーターから取得します。
 球の真値は初期配置と独立評価だけで使い、回収制御には渡しません。
-人物は合成画像向けの既存の別モデルを使用し、実写性能は未確認です。
+人物は2026-10-24に公式YOLO26nを合成画像で追加学習した別モデルを使用し、実写性能は未確認です。
 
 ## 確認環境
 
@@ -32,7 +32,9 @@ RGB描画はllvmpipe、認識は既存AMD GPUを使います。
 推論中も物理時計は進み、この上限は推論の完了や球の状態を見て変えません。
 実時間性能を測ったものではありません。
 
-公開前の整理版ではモデル重みを分離しており、`models/` に `.pt` ファイルは含めていません。両方のモデルを別途配置しない限り、シミュレーションは開始できません。
+人物用モデル `models/yolo26n-person-synthetic-v1.pt` と対応する学習資料を同梱しています。
+球用の公式モデルは `python fetch_yolo_model.py` で別途取得します。
+両方のモデルがそろわない場合、シミュレーションは開始できません。
 `models/model-manifest.json` のSHA-256で両方を検証します。
 保存済みの人物モデルは、録画後に学習時の個人パス5文字列だけを除去した版です。
 全712テンソル領域のバイト列、読み込み後の708テンソル、推論出力が元と一致することを確認しました。
@@ -114,7 +116,7 @@ v66で測った0.125秒の車載画像遅延による失敗は、v85の遅延耐
 ## モデルと出典
 
 球モデルはUltralytics配布のYOLO26nです。
-人物モデルは既存の合成画像向け重みで、由来とハッシュを `models/person-model-provenance.json` に保存しています。
+人物モデルは2026-10-24に本プロジェクトで追加学習した重みです。学習コード・設定・データの目録・成果物の対応を `person_training/`、元と匿名化版のハッシュを `models/person-model-provenance.json` に保存しています。
 取得元のライブラリとモデルの利用条件は、それぞれの公式配布元を確認してください。
 
 - Genesis: https://github.com/Genesis-Embodied-AI/Genesis
@@ -126,8 +128,8 @@ v66で測った0.125秒の車載画像遅延による失敗は、v85の遅延耐
 ## モデルの配置と公開前の確認
 
 - 球用重みは `python fetch_yolo_model.py` で公式配布元から取得し、記録済みハッシュで照合できます。この取得処理は今回の公開準備では実行していません。
-- 人物用重みは `models/yolo26n-person-synthetic-v1.pt` に配置する必要があります。公開用の配布方法、学習用ソースと資産の権利条件は確認中です。未確認の重みを代用品へ差し替えて同じ結果を主張しないでください。
-- Ultralytics のコード・モデルには利用条件があります。公式案内: https://www.ultralytics.com/license 。この整理版にプロジェクト全体のライセンスはまだ付与していません。公開前に条件を確認する必要があります。
+- 人物用重みは `models/yolo26n-person-synthetic-v1.pt` に同梱した固定SHAの匿名化版です。対応する学習資料は `person_training/` にあります。配置と検査は `person_training/REPRODUCTION.md`、利用条件は `THIRD_PARTY_NOTICES_PERSON.md` を参照してください。ライセンス原文は `LICENSE` を参照してください。
+- Ultralytics のコード・モデルには利用条件があります。公式案内: https://www.ultralytics.com/license 。本プロジェクトはAGPL-3.0-onlyで公開し、原文を `LICENSE` に同梱しています。
 - `assets/person-cesium/` は Cesium Man の第三者素材です。出典・CC BY 4.0・商標に関する元の表示を同フォルダに保持しています。作者情報の匿名化を理由に第三者の権利表示を削除していません。
 
 ## この整理版での確認
@@ -138,4 +140,16 @@ v66で測った0.125秒の車載画像遅延による失敗は、v85の遅延耐
 
 実験証拠は `evidence/` の集計・ハッシュ記録です。120 Hz の生計測すべてはこの整理版に含めていません。PDF と動画は別の成果物として管理し、古い版はこのリポジトリに同梱していません。
 
-詳細な取得手順・人物モデルが無人デモでも必須である根拠は [MODEL_SETUP.md](MODEL_SETUP.md)、第三者表示は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を参照してください。公開前の未完了項目は人物用重みの配布経路・対応する学習資料・ライセンス方針です。
+詳細な取得手順・人物モデルが無人デモでも必須である根拠は [MODEL_SETUP.md](MODEL_SETUP.md)、第三者表示は [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) を参照してください。対応する人物学習資料は `person_training/` に用意しました。
+
+
+## 人物モデルの追加資料（2026-11-01）
+
+10月24日の人物追加学習のコード・535枚の実タイルPNGと実ラベル・原画像目録・manifest・学習設定と結果を `person_training/` に収録しています。重みは10月31日に個人パス5文字列を除去した固定SHAの版で、今回再学習していません。`person_training/MODEL_CARD.md` と `person_training/REPRODUCTION.md` を参照してください。既存の制御コードと公開版のフォント/Pythonパス一般化は変更していません。
+
+## ライセンス
+
+本プロジェクトの自作部分と追加学習した人物モデルはAGPL-3.0-onlyで公開します。
+原文は [LICENSE](LICENSE) を参照してください。
+第三者素材には元のライセンスと権利表示が適用されます。
+Cesium Man由来の合成画像の出典と加工内容は [DATASET_ATTRIBUTION.md](person_training/DATASET_ATTRIBUTION.md)、各原文は `LICENSES/` に収録しています。

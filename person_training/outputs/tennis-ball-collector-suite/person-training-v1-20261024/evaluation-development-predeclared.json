@@ -1,0 +1,9 @@
+{
+  "weights_sha256": "df315a4e110a8f72e1fc0fe0ce6cef46ba24c99b40ae091ebd28192f7d4c5536",
+  "set": "development",
+  "images": 48,
+  "threshold": 0.75,
+  "tile_size": 1024,
+  "criteria": "zero false positives and zero missed persons; unchanged 1m localization match",
+  "runtime_source_sha256": "42b44b81adf35ace7ae3c3e091a6e739fbcca9778c1fefed089c71399a020459"
+}

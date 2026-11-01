@@ -10,3 +10,4 @@ runs/
 .env
 .env.*
 *.log
+!models/yolo26n-person-synthetic-v1.pt

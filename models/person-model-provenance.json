@@ -8,5 +8,12 @@
   },
   "scope": "Candidate only. Frozen synthetic offline sets passed. Collection integration and real people not verified.",
   "submission_checkpoint_sha256": "2591906d7ca45eeb9cd199380cf42a73e42b82af0bce30f138e5ce8aa3abc1d5",
-  "submission_metadata_note": "Five private training-path strings were redacted after the recorded run. All712serialized tensor storage blocks,708state tensors,454module identities,andrawCPUforwardoutputs match the original checkpoint exactly. No new training."
+  "submission_metadata_note": "Five private training-path strings were redacted after the recorded run. All712serialized tensor storage blocks,708state tensors,454module identities,andrawCPUforwardoutputs match the original checkpoint exactly. No new training.",
+  "training_date_utc": "2026-10-24",
+  "base_weights_url": "https://github.com/ultralytics/assets/releases/download/v8.4.0/yolo26n.pt",
+  "base_weights_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "training_records": "person_training/outputs/tennis-ball-collector-suite/person-training-v1-20261024",
+  "model_card": "person_training/MODEL_CARD.md",
+  "license_metadata": "AGPL-3.0 (https://ultralytics.com/license)",
+  "record_completed_at_utc": "2026-10-24T07:01:43.954794+00:00"
 }

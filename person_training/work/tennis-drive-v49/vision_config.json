@@ -1,0 +1,13 @@
+{
+  "model": "models/yolo26n.pt",
+  "device": "cuda:0",
+  "image_size": 640,
+  "confidence": 0.20,
+  "physics_substeps": 8,
+  "camera": {
+    "position_in_robot_m": [0.2353, 0.0, 0.1812],
+    "downward_pitch_degrees": 28.0,
+    "vertical_fov_degrees": 72.0,
+    "resolution": [640, 480]
+  }
+}

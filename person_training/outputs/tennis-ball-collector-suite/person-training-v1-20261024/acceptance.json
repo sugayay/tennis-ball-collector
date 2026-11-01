@@ -1,0 +1,39 @@
+{
+  "status": "offline_synthetic_gate_passed_integrated_validation_pending",
+  "person_weights_sha256": "df315a4e110a8f72e1fc0fe0ce6cef46ba24c99b40ae091ebd28192f7d4c5536",
+  "original_ball_weights_unchanged": true,
+  "image_counts": {
+    "development": 48,
+    "smoke": 9,
+    "validation": 24
+  },
+  "person_detections": {
+    "development": 16,
+    "smoke": 4,
+    "validation": 8
+  },
+  "false_positives": {
+    "development": 0,
+    "smoke": 0,
+    "validation": 0
+  },
+  "false_negatives": {
+    "development": 0,
+    "smoke": 0,
+    "validation": 0
+  },
+  "reserved_validation_evaluated_once": true,
+  "confidence": 0.75,
+  "full_image_tile_size": 1024,
+  "known_negative_training_overlap_images": 5,
+  "real_people_or_operational_safety_verified": false,
+  "evaluated_at_utc": "2026-10-24T07:04:18.999722+00:00",
+  "localization_maximum_m": {
+    "development": 0.806787916229039,
+    "smoke": 0.31700636760730183,
+    "validation": 0.27234909585528555
+  },
+  "configured_position_margin_m": 0.25,
+  "all_saved_person_locations_within_configured_margin": false,
+  "operational_person_stop_clearance_verified": false
+}

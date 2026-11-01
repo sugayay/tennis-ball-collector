@@ -1,0 +1,29 @@
+{
+  "checks": {
+    "rendered_images": true,
+    "scene_split_disjoint": true,
+    "external_development_and_validation_not_in_training": true,
+    "all_tile_hashes_and_person_labels_verified": true
+  },
+  "verified": true,
+  "counts": {
+    "train": {
+      "tiles": 441,
+      "positive_tiles": 80
+    },
+    "tune": {
+      "tiles": 94,
+      "positive_tiles": 22
+    }
+  },
+  "person_labels": 102,
+  "visual_spot_check": [
+    "scene_000_A.png",
+    "scene_001_B.png",
+    "scene_029_A.png",
+    "scene_040_A.png"
+  ],
+  "visual_observation": "Viewed near and far persons enclosed by their label boxes, and an unoccupied scene with no person labels.",
+  "limits": "One static CesiumMan pose, three scales, varied positions/orientations and robot shovel poses. Not real-person validation.",
+  "known_negative_regression_images_in_training": 5
+}

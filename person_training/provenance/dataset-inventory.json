@@ -1,0 +1,26 @@
+{
+  "rendered_originals": 120,
+  "rendered_person_images": 80,
+  "rendered_empty_images": 40,
+  "extra_known_negative_originals": 5,
+  "known_negatives_are_outside_the_120": true,
+  "training_source_originals_total": 125,
+  "additional_smoke_person_images": 4,
+  "rendered_120_original_pngs_included": false,
+  "tile_pngs_stored_in_zip": 535,
+  "stored_label_files": 535,
+  "tiles_by_source_and_split": {
+    "train/rendered": 366,
+    "tune/rendered": 94,
+    "train/known_negative": 75
+  },
+  "all_535_distributed_pngs_equal_original_training_pngs": true,
+  "negative_source_images": {
+    "known_negative_0": "outputs/tennis-ball-collector-suite/v42-random-dev731-20261024/person_B_004500_rgb.png",
+    "known_negative_1": "outputs/tennis-ball-collector-suite/v42-random-dev731-20261024/person_B_004560_rgb.png",
+    "known_negative_2": "outputs/tennis-ball-collector-suite/v42-random-dev731-20261024/person_B_004740_rgb.png",
+    "known_negative_3": "outputs/tennis-ball-collector-suite/person-tile-context-r2/0_A_rgb.png",
+    "known_negative_4": "outputs/tennis-ball-collector-suite/person-tile-context-r2/0_B_rgb.png"
+  },
+  "development_validation_72_images_included": false
+}
