@@ -1,0 +1,118 @@
+{
+  "verified": true,
+  "checks": {
+    "raw_measurements_complete_and_valid": true,
+    "all120Hz_samples_present": true,
+    "same_actual_basket_frame_recorded": true,
+    "all_four_rgb_increases_have_independent_last3s_hold": true,
+    "final3s_each_basket_two_full_spheres": true,
+    "four_unique_final_spheres": true,
+    "original_trial_reports_passed": true,
+    "trace_unchanged": true
+  },
+  "decisions": [
+    {
+      "robot": "A",
+      "attempt": 1,
+      "image_status": "confirmed_increase",
+      "hold": {
+        "valid_three_second_interval": true,
+        "samples": 361,
+        "interval": [
+          16.474999999999707,
+          19.474999999999536
+        ],
+        "ids": [
+          0
+        ]
+      },
+      "no_false_success": true
+    },
+    {
+      "robot": "A",
+      "attempt": 2,
+      "image_status": "confirmed_increase",
+      "hold": {
+        "valid_three_second_interval": true,
+        "samples": 361,
+        "interval": [
+          37.7249999999985,
+          40.72499999999833
+        ],
+        "ids": [
+          0,
+          1
+        ]
+      },
+      "no_false_success": true
+    },
+    {
+      "robot": "B",
+      "attempt": 1,
+      "image_status": "confirmed_increase",
+      "hold": {
+        "valid_three_second_interval": true,
+        "samples": 361,
+        "interval": [
+          16.474999999999707,
+          19.474999999999536
+        ],
+        "ids": [
+          2
+        ]
+      },
+      "no_false_success": true
+    },
+    {
+      "robot": "B",
+      "attempt": 2,
+      "image_status": "confirmed_increase",
+      "hold": {
+        "valid_three_second_interval": true,
+        "samples": 361,
+        "interval": [
+          37.7249999999985,
+          40.72499999999833
+        ],
+        "ids": [
+          2,
+          3
+        ]
+      },
+      "no_false_success": true
+    }
+  ],
+  "final": {
+    "A": {
+      "valid_three_second_interval": true,
+      "samples": 361,
+      "interval": [
+        40.733333333331665,
+        43.733333333331494
+      ],
+      "ids": [
+        0,
+        1
+      ]
+    },
+    "B": {
+      "valid_three_second_interval": true,
+      "samples": 361,
+      "interval": [
+        40.733333333331665,
+        43.733333333331494
+      ],
+      "ids": [
+        2,
+        3
+      ]
+    }
+  },
+  "errors": [],
+  "sample_counts": {
+    "A": 5249,
+    "B": 5249
+  },
+  "trace_sha256": "66327104fd254259aca6714fcece2d9d5b241069faff8e49448a89ffb0d6f4f0",
+  "scope": "Independent replay only;full ball spheres in actual measured basket;no control outputs or world mutations."
+}

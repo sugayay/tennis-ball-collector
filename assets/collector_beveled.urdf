@@ -1,0 +1,431 @@
+<?xml version='1.0' encoding='utf-8'?>
+<robot name="collector_beveled_proposal">
+  <material name="body">
+    <color rgba="0.03 0.53 0.65 1" />
+  </material>
+  <material name="basket">
+    <color rgba="0.80 0.91 0.93 1" />
+  </material>
+  <material name="orange">
+    <color rgba="1.0 0.44 0.10 1" />
+  </material>
+  <material name="rubber">
+    <color rgba="0.045 0.06 0.08 1" />
+  </material>
+  <material name="hub">
+    <color rgba="0.50 0.65 0.70 1" />
+  </material>
+  <link name="base_link">
+    <inertial>
+      <origin xyz="-0.025 0 0" />
+      <mass value="7.0" />
+      <inertia ixx="0.087" ixy="0" ixz="0" iyy="0.184" iyz="0" izz="0.256" />
+    </inertial>
+    <visual name="chassis">
+      <origin xyz="0 0 -0.025" />
+      <geometry>
+        <box size="0.55 0.37 0.10" />
+      </geometry>
+      <material name="body" />
+    </visual>
+    <collision name="chassis_collision">
+      <origin xyz="0 0 -0.025" />
+      <geometry>
+        <box size="0.55 0.37 0.10" />
+      </geometry>
+    </collision>
+    <visual name="basket_floor">
+      <origin xyz="-0.08 0 0.04" />
+      <geometry>
+        <box size="0.34 0.30 0.025" />
+      </geometry>
+      <material name="basket" />
+    </visual>
+    <collision name="basket_floor_collision">
+      <origin xyz="-0.08 0 0.04" />
+      <geometry>
+        <box size="0.34 0.30 0.025" />
+      </geometry>
+    </collision>
+    <visual name="basket_back">
+      <origin xyz="-0.24 0 0.11" />
+      <geometry>
+        <box size="0.025 0.32 0.15" />
+      </geometry>
+      <material name="basket" />
+    </visual>
+    <collision name="basket_back_collision">
+      <origin xyz="-0.24 0 0.11" />
+      <geometry>
+        <box size="0.025 0.32 0.15" />
+      </geometry>
+    </collision>
+    <visual name="basket_left">
+      <origin xyz="-0.08 0.15 0.11" />
+      <geometry>
+        <box size="0.34 0.025 0.15" />
+      </geometry>
+      <material name="basket" />
+    </visual>
+    <collision name="basket_left_collision">
+      <origin xyz="-0.08 0.15 0.11" />
+      <geometry>
+        <box size="0.34 0.025 0.15" />
+      </geometry>
+    </collision>
+    <visual name="basket_right">
+      <origin xyz="-0.08 -0.15 0.11" />
+      <geometry>
+        <box size="0.34 0.025 0.15" />
+      </geometry>
+      <material name="basket" />
+    </visual>
+    <collision name="basket_right_collision">
+      <origin xyz="-0.08 -0.15 0.11" />
+      <geometry>
+        <box size="0.34 0.025 0.15" />
+      </geometry>
+    </collision>
+    <visual name="basket_front">
+      <origin xyz="0.08 0 0.11" />
+      <geometry>
+        <box size="0.025 0.32 0.15" />
+      </geometry>
+      <material name="body" />
+    </visual>
+    <collision name="basket_front_collision">
+      <origin xyz="0.08 0 0.11" />
+      <geometry>
+        <box size="0.025 0.32 0.15" />
+      </geometry>
+    </collision>
+    <visual name="arm_pivot_shaft">
+      <origin xyz="-0.06 0 -0.005" />
+      <geometry>
+        <box size="0.035 0.59 0.035" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+    <visual name="front_deck">
+      <origin xyz="0.18 0 0.035" />
+      <geometry>
+        <box size="0.15 0.28 0.035" />
+      </geometry>
+      <material name="body" />
+    </visual>
+    <visual name="camera_stand">
+      <origin xyz="0.20 0 0.11" />
+      <geometry>
+        <box size="0.022 0.022 0.14" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+    <visual name="onboard_camera">
+      <origin xyz="0.20 0 0.20" rpy="0 0.48869219 0" />
+      <geometry>
+        <box size="0.06 0.07 0.045" />
+      </geometry>
+      <material name="rubber" />
+    </visual>
+    <visual name="camera_lens">
+      <origin xyz="0.231 0 0.1835" rpy="0 2.05948852 0" />
+      <geometry>
+        <cylinder radius="0.014" length="0.012" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+    <visual name="direction_arrow_left">
+      <origin xyz="0.20 0.023 0.057" rpy="0 0 -0.60" />
+      <geometry>
+        <box size="0.07 0.018 0.006" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <visual name="direction_arrow_right">
+      <origin xyz="0.20 -0.023 0.057" rpy="0 0 0.60" />
+      <geometry>
+        <box size="0.07 0.018 0.006" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+  </link>
+  <link name="left_wheel">
+    <inertial>
+      <mass value="0.35" />
+      <inertia ixx="0.00118" ixy="0" ixz="0" iyy="0.00212" iyz="0" izz="0.00118" />
+    </inertial>
+    <visual>
+      <origin rpy="1.57079632679 0 0" />
+      <geometry>
+        <cylinder radius="0.11" length="0.065" />
+      </geometry>
+      <material name="rubber" />
+    </visual>
+    <visual>
+      <origin xyz="0 0.034 0" rpy="1.57079632679 0 0" />
+      <geometry>
+        <cylinder radius="0.062" length="0.004" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+    <collision>
+      <origin rpy="1.57079632679 0 0" />
+      <geometry>
+        <mesh filename="wheel_collision_128.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="left_wheel" />
+    <origin xyz="0 0.225 -0.095" />
+    <axis xyz="0 1 0" />
+    <limit effort="12" velocity="14" />
+    <dynamics damping="0.05" friction="0.01" />
+  </joint>
+  <link name="right_wheel">
+    <inertial>
+      <mass value="0.35" />
+      <inertia ixx="0.00118" ixy="0" ixz="0" iyy="0.00212" iyz="0" izz="0.00118" />
+    </inertial>
+    <visual>
+      <origin rpy="1.57079632679 0 0" />
+      <geometry>
+        <cylinder radius="0.11" length="0.065" />
+      </geometry>
+      <material name="rubber" />
+    </visual>
+    <visual>
+      <origin xyz="0 -0.034 0" rpy="1.57079632679 0 0" />
+      <geometry>
+        <cylinder radius="0.062" length="0.004" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+    <collision>
+      <origin rpy="1.57079632679 0 0" />
+      <geometry>
+        <mesh filename="wheel_collision_128.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link" />
+    <child link="right_wheel" />
+    <origin xyz="0 -0.225 -0.095" />
+    <axis xyz="0 1 0" />
+    <limit effort="12" velocity="14" />
+    <dynamics damping="0.05" friction="0.01" />
+  </joint>
+  <link name="shovel_arm">
+    <inertial>
+      <origin xyz="0.20 0 0" />
+      <mass value="0.55" />
+      <inertia ixx="0.0447" ixy="0" ixz="0" iyy="0.00735" iyz="0" izz="0.052" />
+    </inertial>
+    <visual name="left_arm">
+      <origin xyz="0.20 0.285 0" />
+      <geometry>
+        <box size="0.40 0.02 0.025" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <collision name="left_arm_collision">
+      <origin xyz="0.20 0.285 0" />
+      <geometry>
+        <box size="0.40 0.02 0.025" />
+      </geometry>
+    </collision>
+    <visual name="right_arm">
+      <origin xyz="0.20 -0.285 0" />
+      <geometry>
+        <box size="0.40 0.02 0.025" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <collision name="right_arm_collision">
+      <origin xyz="0.20 -0.285 0" />
+      <geometry>
+        <box size="0.40 0.02 0.025" />
+      </geometry>
+    </collision>
+    <visual name="bucket_pivot_shaft">
+      <origin xyz="0.40 0 0" />
+      <geometry>
+        <box size="0.02 0.59 0.02" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+  </link>
+  <joint name="shovel_lift_joint" type="revolute">
+    <parent link="base_link" />
+    <child link="shovel_arm" />
+    <origin xyz="-0.06 0 -0.005" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-0.48" upper="2.25" effort="14" velocity="1.5" />
+    <dynamics damping="0.08" friction="0.01" />
+  </joint>
+  <link name="shovel_bucket">
+    <inertial>
+      <origin xyz="0.12 0 0.005" />
+      <mass value="0.30" />
+      <inertia ixx="0.0020" ixy="0" ixz="0" iyy="0.0020" iyz="0" izz="0.0032" />
+    </inertial>
+    <visual name="shovel_floor">
+      <origin xyz="0 0 0" />
+      <geometry>
+        <mesh filename="collector_beveled_floor.obj" scale="1 1 1" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <collision name="shovel_floor_collision">
+      <origin xyz="0 0 0" />
+      <geometry>
+        <mesh filename="collector_beveled_floor.obj" scale="1 1 1" />
+      </geometry>
+    </collision>
+    <visual name="shovel_back">
+      <origin xyz="-0.004 0 0.020" />
+      <geometry>
+        <box size="0.008 0.256 0.09" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <collision name="shovel_back_collision">
+      <origin xyz="-0.004 0 0.020" />
+      <geometry>
+        <box size="0.008 0.256 0.09" />
+      </geometry>
+    </collision>
+    <visual name="shovel_left">
+      <origin xyz="0.125 0.124 0.020" />
+      <geometry>
+        <box size="0.25 0.008 0.09" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <collision name="shovel_left_collision">
+      <origin xyz="0.125 0.124 0.020" />
+      <geometry>
+        <box size="0.25 0.008 0.09" />
+      </geometry>
+    </collision>
+    <visual name="shovel_right">
+      <origin xyz="0.125 -0.124 0.020" />
+      <geometry>
+        <box size="0.25 0.008 0.09" />
+      </geometry>
+      <material name="orange" />
+    </visual>
+    <collision name="shovel_right_collision">
+      <origin xyz="0.125 -0.124 0.020" />
+      <geometry>
+        <box size="0.25 0.008 0.09" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="shovel_tilt_joint" type="revolute">
+    <parent link="shovel_arm" />
+    <child link="shovel_bucket" />
+    <origin xyz="0.40 0 0" />
+    <axis xyz="0 -1 0" />
+    <limit lower="-3.10" upper="0.85" effort="8" velocity="2.0" />
+    <dynamics damping="0.04" friction="0.005" />
+  </joint>
+  <link name="front_caster_fork">
+    <inertial>
+      <origin xyz="-0.01 0 -0.015" />
+      <mass value="0.02" />
+      <inertia ixx="1e-05" ixy="0" ixz="0" iyy="1e-05" iyz="0" izz="1e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.01 0 -0.015" />
+      <geometry>
+        <box size="0.035 0.018 0.035" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+  </link>
+  <joint name="front_caster_yaw" type="continuous">
+    <parent link="base_link" />
+    <child link="front_caster_fork" />
+    <origin xyz="0.25 0 -0.143" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.2" velocity="100" />
+    <dynamics damping="0.0001" friction="0" />
+  </joint>
+  <link name="front_caster_wheel">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.04" />
+      <inertia ixx="1.64e-05" ixy="0" ixz="0" iyy="1.64e-05" iyz="0" izz="1.64e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <sphere radius="0.032" />
+      </geometry>
+      <material name="rubber" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.032" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="front_caster_roll" type="continuous">
+    <parent link="front_caster_fork" />
+    <child link="front_caster_wheel" />
+    <origin xyz="-0.02 0 -0.030" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2" velocity="100" />
+    <dynamics damping="0.0001" friction="0" />
+  </joint>
+  <link name="rear_caster_fork">
+    <inertial>
+      <origin xyz="-0.01 0 -0.015" />
+      <mass value="0.02" />
+      <inertia ixx="1e-05" ixy="0" ixz="0" iyy="1e-05" iyz="0" izz="1e-05" />
+    </inertial>
+    <visual>
+      <origin xyz="-0.01 0 -0.015" />
+      <geometry>
+        <box size="0.035 0.018 0.035" />
+      </geometry>
+      <material name="hub" />
+    </visual>
+  </link>
+  <joint name="rear_caster_yaw" type="continuous">
+    <parent link="base_link" />
+    <child link="rear_caster_fork" />
+    <origin xyz="-0.21 0 -0.141" />
+    <axis xyz="0 0 1" />
+    <limit effort="0.2" velocity="100" />
+    <dynamics damping="0.0001" friction="0" />
+  </joint>
+  <link name="rear_caster_wheel">
+    <inertial>
+      <origin xyz="0 0 0" />
+      <mass value="0.04" />
+      <inertia ixx="1.64e-05" ixy="0" ixz="0" iyy="1.64e-05" iyz="0" izz="1.64e-05" />
+    </inertial>
+    <visual>
+      <geometry>
+        <sphere radius="0.032" />
+      </geometry>
+      <material name="rubber" />
+    </visual>
+    <collision>
+      <geometry>
+        <sphere radius="0.032" />
+      </geometry>
+    </collision>
+  </link>
+  <joint name="rear_caster_roll" type="continuous">
+    <parent link="rear_caster_fork" />
+    <child link="rear_caster_wheel" />
+    <origin xyz="-0.02 0 -0.030" />
+    <axis xyz="0 1 0" />
+    <limit effort="0.2" velocity="100" />
+    <dynamics damping="0.0001" friction="0" />
+  </joint>
+</robot>

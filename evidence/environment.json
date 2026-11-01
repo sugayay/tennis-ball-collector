@@ -1,0 +1,16 @@
+{
+  "physics_backend": "amdgpu",
+  "precision": "32",
+  "renderer": "llvmpipe (LLVM 20.1.2, 256 bits)",
+  "inference_device": "cuda:0 (existing AMD ROCm)",
+  "maximum_simulation_seconds_per_wall_second": 0.5,
+  "pacing": "Constant offline clock cap. Does not inspect or wait for inference results; no real-time claim.",
+  "entry_sha256": "0a83bb62c448b76f1501865dc3610198b5be5e8a12576037e21d1e81acf1dad4",
+  "case_sha256": "cf67d0ec3b62c1dab03ddb3d778a63835cdbd0eb633230ab9862c95394f776ab",
+  "seed": 13,
+  "python": "3.12.3",
+  "torch": "2.9.1+rocm7.2.1.gitff65f5bc",
+  "genesis": "1.4.4",
+  "device": "AMD Radeon RX 7900 XTX",
+  "physics_substeps": 8
+}

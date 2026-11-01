@@ -1,0 +1,14 @@
+{
+  "stiffness_N_m": 2500.0,
+  "damping_Ns_m": 120.0,
+  "rest_position_m": 0.0,
+  "stroke_m": [
+    -0.025,
+    0.025
+  ],
+  "force_limit_N": 120.0,
+  "carrier_mass_kg_each": 0.0405,
+  "model": "Constant-reference linear spring/damper via per-joint PD;no active target updates. Force saturation120N and URDF travel stops. No ball or task state input.",
+  "user_choice": "Supports with springs and dampers,compare first;not final chassis/parameter adoption.",
+  "fairness": "Original wheel gains/torque,drive controller,shovel,basket,ball,solver substeps and qualifier criteria unchanged. Two carriers add0.081kg. At q=0 original caster yaw frames exactly preserved."
+}

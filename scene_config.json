@@ -1,0 +1,20 @@
+{
+  "court_size_m": [34.73, 17.07],
+  "playing_area_m": [23.77, 10.97],
+  "singles_width_m": 8.23,
+  "service_line_distance_m": 6.4,
+  "runoff_margin_m": [5.48, 3.05],
+  "net_center_height_m": 0.914,
+  "net_post_height_m": 1.07,
+  "net_post_offset_m": 0.914,
+  "ball_radius_m": 0.0335,
+  "ball_mass_kg": 0.057,
+  "ball_positions_m": [
+    [-12.8, -6.5],
+    [-6.0, -6.7],
+    [6.8, 6.8],
+    [12.9, 2.1],
+    [8.6, -2.3]
+  ],
+  "robot_position_m": [-13.6, -6.5, 0.205]
+}

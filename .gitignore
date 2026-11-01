@@ -1,0 +1,12 @@
+.venv/
+.runtime/
+__pycache__/
+*.py[cod]
+runs/
+*.pt
+*.mp4
+*.pdf
+*.docx
+.env
+.env.*
+*.log

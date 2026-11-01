@@ -1,0 +1,15 @@
+{
+  "active_robot_id": "A",
+  "waiting_robot_id": "B",
+  "test_ball_position_m": [-13.6, -7.7],
+  "trial_floor_bounds_m": [-15.2, -8.5, -12.0, -5.0],
+  "trial_clearance_m": 0.63,
+  "fixed_update_period_seconds": 0.5,
+  "fixed_observation_timeout_seconds": 1.1,
+  "onboard_update_period_seconds": 0.05,
+  "handoff_distance_m": 0.95,
+  "target_association_distance_m": 0.25,
+  "maximum_fixed_navigation_seconds": 16.0,
+  "maximum_visual_approach_seconds": 12.0,
+  "operation_scope": "unoccupied_short_trial_only_not_final_operating_area"
+}

@@ -1,0 +1,113 @@
+{
+  "verified": true,
+  "checks": {
+    "actual_basket_geometry_valid_every_sample": true,
+    "four_unique_image_derived_assignments": true,
+    "both_robots_used_fixed_and_onboard": true,
+    "both_robots_physically_drove": true,
+    "two_balls_per_basket_held_for_final_3_seconds": true,
+    "all_four_balls_in_unique_baskets": true,
+    "all_four_balls_lifted_above_0_4m": true,
+    "both_robots_stable": true,
+    "temporary_trial_boundaries_respected": true,
+    "practice_court_entry_rule_respected": true,
+    "robot_separation_respected": true,
+    "no_actuator_guard_interventions": true,
+    "new_lift_all_four_axes_held_at_home": true,
+    "no_lift_storage_faults": true,
+    "two_robots_each_confirmed_two_collections": true,
+    "each_confirmed_collection_had_3_second_basket_retention": true,
+    "image_decisions_match_independent_physical_increases": true
+  },
+  "scenario": "02_diagonal",
+  "robot_variant": "lift",
+  "simulated_seconds": 44.5,
+  "wall_clock_seconds": 483.6849251770001,
+  "physics": {
+    "A": {
+      "final_ball_indices": [
+        0,
+        1
+      ],
+      "last_3_seconds_held_ball_indices": [
+        0,
+        1
+      ],
+      "cycle_holds": [
+        {
+          "cycle": 1,
+          "samples": 360,
+          "continuously_held_ball_indices": [
+            0
+          ]
+        },
+        {
+          "cycle": 2,
+          "samples": 360,
+          "continuously_held_ball_indices": [
+            0,
+            1
+          ]
+        }
+      ],
+      "maximum_tilt_degrees": 6.167312097859244,
+      "minimum_height_m": 0.2044060379266739,
+      "travel_m": 2.264962560837424,
+      "fixed_guided_travel_m": 0.8495801839849288,
+      "final_position_m": [
+        -11.533329963684082,
+        -6.668401718139648,
+        0.2047620415687561
+      ]
+    },
+    "B": {
+      "final_ball_indices": [
+        2,
+        3
+      ],
+      "last_3_seconds_held_ball_indices": [
+        2,
+        3
+      ],
+      "cycle_holds": [
+        {
+          "cycle": 1,
+          "samples": 360,
+          "continuously_held_ball_indices": [
+            2
+          ]
+        },
+        {
+          "cycle": 2,
+          "samples": 360,
+          "continuously_held_ball_indices": [
+            2,
+            3
+          ]
+        }
+      ],
+      "maximum_tilt_degrees": 6.065758002683578,
+      "minimum_height_m": 0.2044345736503601,
+      "travel_m": 2.2631854276370325,
+      "fixed_guided_travel_m": 0.8499849909961066,
+      "final_position_m": [
+        11.524807929992676,
+        6.663641929626465,
+        0.20475678145885468
+      ]
+    }
+  },
+  "model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "person_detection": {
+    "model": "yolo26n-person-synthetic-v1.pt",
+    "model_sha256": "df315a4e110a8f72e1fc0fe0ce6cef46ba24c99b40ae091ebd28192f7d4c5536",
+    "separate_model": true,
+    "confidence": 0.75,
+    "tile_size_pixels": 1024,
+    "full_image_coverage": true
+  },
+  "controller_uses_simulator_ball_state": false,
+  "ball_state_modified_during_episode": false,
+  "ball_attachment_used": false,
+  "physical_evaluation_frame": "actual_authored_basket_link_full_sphere"
+}

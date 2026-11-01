@@ -1,0 +1,4 @@
+{
+  "wheel_velocity_gain": 12.0,
+  "maximum_wheel_torque_nm": 2.0
+}

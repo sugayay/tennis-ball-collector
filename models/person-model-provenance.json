@@ -1,0 +1,12 @@
+{
+  "person_model_sha256": "df315a4e110a8f72e1fc0fe0ce6cef46ba24c99b40ae091ebd28192f7d4c5536",
+  "original_ball_model_sha256": "9b09cc8bf347f0fc8a5f7657480587f25db09b34bf33b0652110fb03a8ad4fef",
+  "evaluations": {
+    "development": "ec0f468da2a4f5490058b8b00e60a68641d46f794d5773ce5d7276d5aebb8c17",
+    "smoke": "0b40addbbd2e0e5f1599e65b67ea95759053e06bf7d5c82813027cb580b28b28",
+    "validation": "bca4384da215c7257d7a01c57f3f230ab65ea9b28dd15079a536bc4e0965be2e"
+  },
+  "scope": "Candidate only. Frozen synthetic offline sets passed. Collection integration and real people not verified.",
+  "submission_checkpoint_sha256": "2591906d7ca45eeb9cd199380cf42a73e42b82af0bce30f138e5ce8aa3abc1d5",
+  "submission_metadata_note": "Five private training-path strings were redacted after the recorded run. All712serialized tensor storage blocks,708state tensors,454module identities,andrawCPUforwardoutputs match the original checkpoint exactly. No new training."
+}

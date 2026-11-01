@@ -1,0 +1,54 @@
+{
+  "cameras": [
+    {
+      "id": "A",
+      "position_m": [
+        -19.0,
+        0.0,
+        10.0
+      ],
+      "lookat_m": [
+        -8.0,
+        0.0,
+        0.0335
+      ],
+      "resolution": [
+        3840,
+        2160
+      ],
+      "vertical_fov_degrees": 82.0
+    },
+    {
+      "id": "B",
+      "position_m": [
+        19.0,
+        0.0,
+        10.0
+      ],
+      "lookat_m": [
+        8.0,
+        0.0,
+        0.0335
+      ],
+      "resolution": [
+        3840,
+        2160
+      ],
+      "vertical_fov_degrees": 82.0
+    }
+  ],
+  "placement_status": "provisional_observation_test_not_final_hardware_specification",
+  "tile_size_pixels": 512,
+  "tile_overlap_fraction": 0.2,
+  "tile_inference_size_pixels": 1280,
+  "inference_batch_size": 4,
+  "box_merge_iou": 0.3,
+  "cross_camera_merge_distance_m": 0.18,
+  "evaluation_match_distance_m": 0.3,
+  "person_safety_enabled": true,
+  "person_dual_view_localization": true,
+  "person_confidence": 0.75,
+  "person_tile_size_pixels": 1024,
+  "person_tile_inference_size_pixels": 1280,
+  "person_model": "yolo26n-person-synthetic-v1.pt"
+}

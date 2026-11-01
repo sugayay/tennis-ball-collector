@@ -1,0 +1,45 @@
+{
+  "checked_at_utc": "2026-10-31T03:21:18Z",
+  "case": "02_diagonal",
+  "case_sha256": "cf67d0ec3b62c1dab03ddb3d778a63835cdbd0eb633230ab9862c95394f776ab",
+  "physics": "CPU32",
+  "renderer": "llvmpipe",
+  "vision": "existing AMD ROCm GPU",
+  "same_models_case_seed_renderer_clock_recording": true,
+  "attempts_per_version": 1,
+  "completed": [
+    {
+      "version": "v85",
+      "returncode": 0,
+      "wall_seconds": 325.7970000000205,
+      "source_unchanged": true,
+      "output": "runs/v85-diagonal",
+      "case_sha256": "cf67d0ec3b62c1dab03ddb3d778a63835cdbd0eb633230ab9862c95394f776ab",
+      "verified": true,
+      "held": 4,
+      "total": 4,
+      "simulated_seconds": 44.61666666666667,
+      "maximum_tilt_degrees": 6.126400915131667,
+      "failed_checks": [],
+      "failed_full_sphere_checks": [],
+      "raw_trace_sha256": "12a459ed3327714cd1a52faaaf403c94b1f75e9523ee9deeb9fc51c42e6c32ab"
+    },
+    {
+      "version": "v90",
+      "returncode": 0,
+      "wall_seconds": 322.31200000003446,
+      "source_unchanged": true,
+      "output": "runs/v90-diagonal",
+      "case_sha256": "cf67d0ec3b62c1dab03ddb3d778a63835cdbd0eb633230ab9862c95394f776ab",
+      "verified": true,
+      "held": 4,
+      "total": 4,
+      "simulated_seconds": 45.69166666666667,
+      "maximum_tilt_degrees": 4.7535405063112055,
+      "failed_checks": [],
+      "failed_full_sphere_checks": [],
+      "raw_trace_sha256": "82429c8e12d4171237c9928506621a1a5eeb2b86c96e64202b9088786dde6711"
+    }
+  ],
+  "qualification_limit": "One fixed synthetic scene; earlier complete v85 seven-layout evidence is separate. No attribution to a single changed parameter."
+}

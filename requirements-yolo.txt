@@ -1,0 +1,9 @@
+# Install with --no-deps into the existing Genesis ROCm environment.
+# Keep its tested PyTorch, NumPy, and renderer packages unchanged.
+ultralytics==8.4.182
+torchvision @ https://repo.radeon.com/rocm/manylinux/rocm-rel-7.2.1/torchvision-0.24.0%2Brocm7.2.1.gitb919bd0c-cp312-cp312-linux_x86_64.whl
+ultralytics-thop==2.2.2
+polars==2.0.0
+polars-runtime-32==2.0.0
+nvidia-ml-py==13.615.71
+ultralytics-platform==0.1.90

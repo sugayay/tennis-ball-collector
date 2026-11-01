@@ -1,0 +1,22 @@
+{
+  "version": "v85",
+  "status": "complete",
+  "verified": true,
+  "completed": [
+    {
+      "case": "02_diagonal",
+      "verified": true,
+      "held": 4,
+      "total": 4,
+      "returncode": 0,
+      "simulated_seconds": 44.5,
+      "native_verified": true,
+      "independent_verified": true,
+      "failed_checks": [],
+      "failed_independent_checks": [],
+      "wall_seconds": 532.1155661920001,
+      "source_unchanged": true
+    }
+  ],
+  "active": null
+}

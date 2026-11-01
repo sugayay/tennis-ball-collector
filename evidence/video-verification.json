@@ -1,0 +1,26 @@
+{
+  "programs": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "12/1",
+      "nb_frames": "678"
+    }
+  ],
+  "format": {
+    "duration": "56.500000",
+    "size": "2248986"
+  },
+  "source_run": "v85 submission copy,02_diagonal,2026-10-31",
+  "source_sha256": "e8bf59be586aee072d1898ef061b8dc767d72c3df060f54120c054032345a95e",
+  "output_sha256": "cdfd8d75a8f3fd6617d47e31861a97869d293f06fb9dcef2b20a50a560aa53e2",
+  "title_seconds": 5,
+  "ending_seconds": 7,
+  "speed": "1x simulation clock,12fps,entire run included",
+  "audio": "none",
+  "raw_video_seconds": 44.5,
+  "source_simulation_seconds": 44.5,
+  "full_decode_verified": true
+}

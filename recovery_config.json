@@ -1,0 +1,11 @@
+{
+  "enabled": true,
+  "maximum_attempts_per_target": 2,
+  "search_radius_m": 0.75,
+  "wait_timeout_seconds": 12.0,
+  "backoff_distance_m": 0.40,
+  "backoff_speed_m_s": 0.12,
+  "backoff_timeout_seconds": 6.0,
+  "settle_seconds": 0.5,
+  "fixed_max_age_seconds": 0.65
+}

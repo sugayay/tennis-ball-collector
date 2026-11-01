@@ -1,0 +1,82 @@
+{
+  "operation_scope": "unoccupied_separated_trial_zones_not_final_operating_areas",
+  "trial_zones": {
+    "A": [
+      -15.2,
+      -8.535,
+      -9.5,
+      -5.485
+    ],
+    "B": [
+      9.5,
+      5.485,
+      15.2,
+      8.535
+    ]
+  },
+  "trial_clearance_m": 0.63,
+  "cycles_per_robot": 2,
+  "scoop_distance_m": 0.115,
+  "scoop_preinsert_m": 0.055,
+  "pickup_forward_speed_m_s": 0.3,
+  "minimum_scoop_seconds": 0.3,
+  "maximum_scoop_seconds": 1.5,
+  "fixed_update_period_seconds": 0.5,
+  "fixed_observation_timeout_seconds": 1.1,
+  "handoff_distance_m": 0.95,
+  "target_association_distance_m": 0.25,
+  "robot_detection_exclusion_radius_m": 0.65,
+  "completed_target_exclusion_radius_m": 0.3,
+  "minimum_robot_separation_m": 1.4,
+  "maximum_fixed_navigation_seconds": 32,
+  "maximum_visual_approach_seconds": 16,
+  "lost_detection_retry_seconds": 1.6,
+  "retry_wait_seconds": 0.75,
+  "maximum_retries_per_target": 2,
+  "maximum_mission_seconds": 115,
+  "test_ball_positions_m": [
+    [
+      -12.8,
+      -6.5
+    ],
+    [
+      -11.5,
+      -6.5
+    ],
+    [
+      12.8,
+      6.5
+    ],
+    [
+      11.5,
+      6.5
+    ]
+  ],
+  "cruise_speed_m_s": 1.4,
+  "maximum_travel_command_m_s": 1.5,
+  "travel_brake_reaction_seconds": 0.15,
+  "travel_brake_deceleration_m_s2": 0.4,
+  "near_handoff_speed_m_s": 0.14,
+  "travel_speed_profile": "braking_distance",
+  "travel_acceleration_m_s2": 0.5,
+  "travel_slow_speed_distance_m": 1.2,
+  "travel_speed_feedback_gain": 0.2,
+  "fast_travel_minimum_distance_m": 2.6,
+  "fast_travel_end_distance_m": 2.3,
+  "maximum_wheel_speed_rad_s": 14.0,
+  "fast_line_tracking": true,
+  "fast_lookahead_m": 1.2,
+  "travel_shovel_lift_angle_rad": -0.3,
+  "travel_shovel_lift_rate_rad_s": 0.3,
+  "person_safety": {
+    "frame_max_age_seconds": 0.65,
+    "robot_radius_m": 0.63,
+    "person_radius_m": 0.65,
+    "position_margin_m": 0.25,
+    "person_speed_bound_m_s": 1.5,
+    "reaction_seconds": 0.15,
+    "braking_deceleration_m_s2": 0.4
+  },
+  "brake_pitch_damping_kp": 0.5,
+  "brake_pitch_damping_kd": 0.15
+}
